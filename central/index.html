@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Central</title>
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/shared/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
   <header class="site-header">
     <a href="#" class="site-header__logo-link" aria-label="Fiesta Park Hotel">
-      <img src="assets/logo-header.webp" alt="Fiesta Park Hotel logo" class="site-header__logo">
+      <img src="assets/header/logo-header.webp" alt="Fiesta Park Hotel logo" class="site-header__logo">
     </a>
     <nav class="site-nav" aria-label="Navegação principal">
       <a href="#" class="site-nav__link">Atrações</a>
@@ -21,10 +21,10 @@
     </nav>
     <div class="site-header__actions">
       <a href="#" class="site-header__social" aria-label="TikTok">
-        <img src="assets/tiktok.webp" alt="" class="site-header__social-icon" aria-hidden="true">
+        <img src="assets/header/tiktok.webp" alt="" class="site-header__social-icon" aria-hidden="true">
       </a>
       <a href="#" class="site-header__social" aria-label="Instagram">
-        <img src="assets/instagram.webp" alt="" class="site-header__social-icon" aria-hidden="true">
+        <img src="assets/header/instagram.webp" alt="" class="site-header__social-icon" aria-hidden="true">
       </a>
     </div>
   </header>
@@ -32,37 +32,107 @@
     <div class="exib__viewer">
       <div class="exib__track">
         <div class="exib__item">
-          <img src="assets/planner/escorrega.webp" alt="Escorrega do parque aquático" class="exib__image">
+          <img src="assets/top-showcase/planner/escorrega.webp" alt="Escorrega do parque aquático" class="exib__image">
           <span class="exib__letter">F</span>
         </div>
         <div class="exib__item">
-          <img src="assets/planner/guarda-chuva.webp" alt="Área com guarda-sol do Fiesta Park" class="exib__image">
+          <img src="assets/top-showcase/planner/guarda-chuva.webp" alt="Área com guarda-sol do Fiesta Park" class="exib__image">
           <span class="exib__letter">I</span>
         </div>
         <div class="exib__item">
-          <img src="assets/planner/baleia.webp" alt="Atração infantil em formato de baleia" class="exib__image">
+          <img src="assets/top-showcase/planner/baleia.webp" alt="Atração infantil em formato de baleia" class="exib__image">
           <span class="exib__letter">E</span>
         </div>
         <div class="exib__item">
-          <img src="assets/planner/piscina.webp" alt="Piscina do Fiesta Park" class="exib__image">
+          <img src="assets/top-showcase/planner/piscina.webp" alt="Piscina do Fiesta Park" class="exib__image">
           <span class="exib__letter">S</span>
         </div>
         <div class="exib__item">
-          <img src="assets/planner/piscina2.webp" alt="Outra área de piscina do Fiesta Park" class="exib__image">
+          <img src="assets/top-showcase/planner/piscina2.webp" alt="Outra área de piscina do Fiesta Park" class="exib__image">
           <span class="exib__letter">T</span>
         </div>
         <div class="exib__item">
-          <img src="assets/planner/quarto.webp" alt="Quarto do Fiesta Park" class="exib__image">
+          <img src="assets/top-showcase/planner/quarto.webp" alt="Quarto do Fiesta Park" class="exib__image">
           <span class="exib__letter">A</span>
         </div>
       </div>
     </div>
   </section>
-  <div class="section-divider" aria-hidden="true">
-    <img src="assets/ingresso.webp" alt="" class="section-divider__ticket">
+  <div class="section-divider" aria-label="Agenda de dias abertos de agosto">
+    <div class="section-divider__content">
+      <section class="section-divider__calendar">
+        <img
+          src="assets/calendar-status/menino-boia.webp"
+          alt=""
+          class="section-divider__kid"
+          aria-hidden="true"
+          data-kid-open-src="assets/calendar-status/menino-boia.webp"
+          data-kid-closed-src="assets/calendar-status/menino-boia-triste.png"
+        >
+        <h2 class="section-divider__calendar-title">AGOSTO</h2>
+        <div class="section-divider__calendar-weekdays" aria-hidden="true">
+          <span>DOM</span>
+          <span>SEG</span>
+          <span>TER</span>
+          <span>QUA</span>
+          <span>QUI</span>
+          <span>SEX</span>
+          <span>SÁB</span>
+        </div>
+        <div class="section-divider__calendar-days" role="list" aria-label="Datas disponíveis em agosto">
+          <span class="is-empty" aria-hidden="true"></span>
+          <span class="is-empty" aria-hidden="true"></span>
+          <span class="is-empty" aria-hidden="true"></span>
+          <span class="is-empty" aria-hidden="true"></span>
+          <button type="button" class="calendar-day is-open" data-day="1" data-date-label="1 de agosto">1</button>
+          <button type="button" class="calendar-day is-open" data-day="2" data-date-label="2 de agosto">2</button>
+          <button type="button" class="calendar-day is-open" data-day="3" data-date-label="3 de agosto">3</button>
+          <button type="button" class="calendar-day is-open" data-day="4" data-date-label="4 de agosto">4</button>
+          <button type="button" class="calendar-day is-open" data-day="5" data-date-label="5 de agosto">5</button>
+          <button type="button" class="calendar-day is-open" data-day="6" data-date-label="6 de agosto">6</button>
+          <button type="button" class="calendar-day is-open" data-day="7" data-date-label="7 de agosto">7</button>
+          <button type="button" class="calendar-day is-open" data-day="8" data-date-label="8 de agosto">8</button>
+          <button type="button" class="calendar-day is-open" data-day="9" data-date-label="9 de agosto">9</button>
+          <button type="button" class="calendar-day is-open" data-day="10" data-date-label="10 de agosto">10</button>
+          <button type="button" class="calendar-day is-open" data-day="11" data-date-label="11 de agosto">11</button>
+          <button type="button" class="calendar-day is-open" data-day="12" data-date-label="12 de agosto">12</button>
+          <button type="button" class="calendar-day is-open" data-day="13" data-date-label="13 de agosto">13</button>
+          <button type="button" class="calendar-day is-open" data-day="14" data-date-label="14 de agosto">14</button>
+          <button type="button" class="calendar-day is-open" data-day="15" data-date-label="15 de agosto">15</button>
+          <button type="button" class="calendar-day is-open" data-day="16" data-date-label="16 de agosto">16</button>
+          <button type="button" class="calendar-day is-open" data-day="17" data-date-label="17 de agosto">17</button>
+          <button type="button" class="calendar-day is-open" data-day="18" data-date-label="18 de agosto">18</button>
+          <button type="button" class="calendar-day is-open" data-day="19" data-date-label="19 de agosto">19</button>
+          <button type="button" class="calendar-day is-open is-selected" data-day="20" data-date-label="20 de agosto" aria-pressed="true">20</button>
+          <button type="button" class="calendar-day is-open" data-day="21" data-date-label="21 de agosto">21</button>
+          <button type="button" class="calendar-day is-open" data-day="22" data-date-label="22 de agosto">22</button>
+          <button type="button" class="calendar-day is-open" data-day="23" data-date-label="23 de agosto">23</button>
+          <button type="button" class="calendar-day is-open" data-day="24" data-date-label="24 de agosto">24</button>
+          <button type="button" class="calendar-day is-open" data-day="25" data-date-label="25 de agosto">25</button>
+          <button type="button" class="calendar-day is-open" data-day="26" data-date-label="26 de agosto">26</button>
+          <button type="button" class="calendar-day is-open" data-day="27" data-date-label="27 de agosto">27</button>
+          <button type="button" class="calendar-day is-open" data-day="28" data-date-label="28 de agosto">28</button>
+          <button type="button" class="calendar-day is-open" data-day="29" data-date-label="29 de agosto">29</button>
+          <button type="button" class="calendar-day is-open" data-day="30" data-date-label="30 de agosto">30</button>
+          <button type="button" class="calendar-day is-open" data-day="31" data-date-label="31 de agosto">31</button>
+        </div>
+      </section>
+      <aside class="section-divider__status" aria-label="Status de funcionamento">
+        <span class="section-divider__status-kicker">Hoje</span>
+        <p class="section-divider__status-text">
+          <span>Fiesta aberto</span>
+          <strong data-status-date>20 de agosto</strong>
+        </p>
+      </aside>
+    </div>
   </div>
   <section class="blue-panel" aria-label="Painel visual">
+    <img src="assets/blue-panel/tubarao.webp" alt="" class="blue-panel__shark" aria-hidden="true">
     <div class="blue-panel__background"></div>
   </section>
+  <section class="yellow-panel" aria-label="Contato">
+    <h2 class="yellow-panel__title">Entre em contato conosco</h2>
+  </section>
+  <script src="scripts/calendar-status.js"></script>
 </body>
 </html>
